@@ -30,7 +30,7 @@ phi = math.degrees(math.acos(x / (r * math.sin(math.radians(theta)))))
 
 # ANSWERS (DISTANCE TO CENTER TARGET)
 azimuth_pos_move = 90 - phi
-elevation_pos_move = 90 - current_elevation - theta + elevation_offset
+elevation_pos_move = 90 - current_elevation - theta
 
 # NEW ABSOLUTE POSITIONS
 new_abs_azimuth = (current_azimuth + azimuth_pos_move) % 360
